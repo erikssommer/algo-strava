@@ -41,3 +41,18 @@ class Solution:
             head = head.next
 
         return head
+
+# Solution with only one loop
+class Solution2:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head == None:
+            return head
+
+        slow = head
+        fast = head
+
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+
+        return slow
