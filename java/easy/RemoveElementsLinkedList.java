@@ -38,7 +38,7 @@ class ListNode {
     }
 }
 
-public class RemoveElementsFromLinkedList {
+public class RemoveElementsLinkedList {
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) {
             return null;
